@@ -1,9 +1,13 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 const NotFound = () => {
   return (
     <>
-      <h1>404: Page Not Found</h1>
+      <Navbar />
+      <h1>404: Page not Found</h1>
+      <Footer />
     </>
   );
 };
-export default NotFound();
+export default NotFound;
