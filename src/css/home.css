@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  margin-top: 6rem;
+  margin-right: 4rem;
+}
+
+.about button {
+  margin-bottom: 2%;
+  background-color: rgb(187, 110, 151);
+}
+
+.about button:hover {
+  background-color: rgb(187, 110, 151);
+  color: darkred;
+}
+
+.col {
+  flex: 50%;
+}
+
+.about-image {
+  max-width: 100%;
+  margin-left: 5%;
+}
+
+/* @media (max-width: 768px) {
+  .about p,
+  .about button,
+  .about-image {
+    flex: 100%;
+    margin: 0;
+  }
+  .col {
+    flex: 50%;
+  }
+} */
