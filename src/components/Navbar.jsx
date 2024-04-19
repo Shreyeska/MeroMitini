@@ -1,5 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -14,12 +17,21 @@ const Navbar = () => {
         <NavLink to="/home" exact activeClassName="active">
           Home
         </NavLink>
-        <NavLink to="/events" activeClassName="active">
-          Events
-        </NavLink>
-        <NavLink to="/notice" activeClassName="active">
-          Notice
-        </NavLink>
+
+        <div className="dropdown">
+          <button className="dropbtn">
+            Events <FontAwesomeIcon icon={faAngleDown} />
+          </button>
+          <div className="dropdown-content">
+            <NavLink to="/upcoming-events" activeClassName="active">
+              Upcoming Events
+            </NavLink>
+            <NavLink to="/past-events" activeClassName="active">
+              Past Events
+            </NavLink>
+          </div>
+        </div>
+
         <NavLink to="/about" activeClassName="active">
           About
         </NavLink>
@@ -29,6 +41,9 @@ const Navbar = () => {
         <NavLink to="/sign-up" activeClassName="active">
           Signup
         </NavLink>
+        <button className="search-button">
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
       </div>
     </nav>
   );
