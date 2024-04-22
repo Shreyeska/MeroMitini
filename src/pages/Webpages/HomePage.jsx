@@ -1,12 +1,12 @@
 import React from "react";
-import Events from "../../components/Home/Events";
-import Notice from "../../components/Home/Notice";
+import HomeEvents from "../../components/Home/HomeEvents";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./../../css/home.css";
+import HomeUpcomingEvents from "../../components/Home/HomeUpcomingEvents";
 
 const Home = () => {
   return (
@@ -17,12 +17,13 @@ const Home = () => {
         <div className="about">
           <div className="col">
             <h1>Women Empowerment</h1>
-            <h2>For the women By the women</h2>
+            <h2>For the women x By the women</h2>
             <div className="search-section">
-              <textarea
+              <input
+                type="text"
                 placeholder="Search for your event"
                 className="search-input"
-              ></textarea>
+              ></input>
               <button className="search-button">
                 <FontAwesomeIcon icon={faSearch} />
               </button>
@@ -30,9 +31,18 @@ const Home = () => {
           </div>
           <div className="col"></div>
         </div>
-        <Events />
+        <h1>New Upcoming Events</h1>
+        <HomeUpcomingEvents />
+        <Link to="/upcoming-events" className="read-more-button">
+          Read More
+        </Link>
 
-        <Notice />
+        <h1>Past Events</h1>
+        <HomeEvents />
+        <Link to="/events" className="read-more-button">
+          Read More
+        </Link>
+
         <Footer />
       </div>
     </>

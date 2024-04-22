@@ -26,7 +26,7 @@ const Navbar = () => {
             <NavLink to="/upcoming-events" activeClassName="active">
               Upcoming Events
             </NavLink>
-            <NavLink to="/past-events" activeClassName="active">
+            <NavLink to="/events" activeClassName="active">
               Past Events
             </NavLink>
           </div>

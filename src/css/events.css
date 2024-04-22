@@ -1,0 +1,62 @@
+.event-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.event-image-container {
+  height: 200px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 8px;
+}
+
+.event-image {
+  width: 100%; /* Ensure the image covers the entire container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.event-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.event-date,
+.event-category {
+  margin-bottom: 5px;
+}
+
+.read-more-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-fontcolor);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+h1 {
+  color: var(
+    --primary-fontcolor
+  ); /* Use a custom CSS variable for flexibility */
+  text-align: center;
+  font-size: 3em; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(131, 122, 122, 0.5); /* Add a subtle text shadow */
+  animation: glow 2s ease-in-out infinite alternate; /* Add a glowing animation */
+}

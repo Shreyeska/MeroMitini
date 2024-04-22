@@ -1,5 +1,5 @@
 import React from "react";
-import Events from "../../components/Home/Events";
+import Events from "../../components/OtherPages/Events";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 

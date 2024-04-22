@@ -1,16 +1,16 @@
 import React from "react";
-import Notice from "../../components/Home/Notice";
+import UpcomingEvents from "../../components/OtherPages/UpcomingEvents";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-const NoticePage = () => {
+const UpcomingEventsPage = () => {
   return (
     <>
       <Navbar />
-      <Notice />
+      <UpcomingEvents />
       <Footer />
     </>
   );
 };
 
-export default NoticePage;
+export default UpcomingEventsPage;
