@@ -6,7 +6,7 @@
 }
 .about {
   display: flex;
-  background: url("../src/assets/banner.png") no-repeat center center / cover;
+  background: url("/assets/banner.png") no-repeat center center / cover;
   padding: 2rem 2rem;
   object-fit: fill;
   height: 500px;
@@ -77,7 +77,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+  transition: background-color 0.3s ease;
 
   /* Center the text */
   text-align: center;
