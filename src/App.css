@@ -1,7 +1,7 @@
 body {
   position: relative;
   margin: 0;
-  min-width: 80vw;
+  min-width: 100vw;
   overflow-x: hidden;
   display: flex;
 }
@@ -13,8 +13,8 @@ body {
   background-color: white;
   text-align: justify;
   min-height: 100vh;
-  min-width: 80vw;
-  overflow: hidden;
+  /* min-width: 80vw;
+  overflow: hidden; */
   --primary-color: #e997a3;
   --secondary-color: rgb(80, 42, 67);
   --primary-fontcolor: #001c53;
