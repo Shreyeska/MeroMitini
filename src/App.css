@@ -19,6 +19,7 @@ body {
   --secondary-color: rgb(80, 42, 67);
   --primary-fontcolor: #001c53;
   --secondary-fontcolor: #f5f5f5;
+  --white: white;
 }
 
 .navbar {
