@@ -21,6 +21,7 @@
 
 .event-card .event-details {
   padding: 10px;
+  color: var(--primary-fontcolor);
 }
 
 .event-image-container {
@@ -73,6 +74,10 @@ p.desc {
   color: var(--primary-fontcolor);
   text-align: center;
   margin: 20px 0;
+}
+.event-detail-link {
+  color: var(--white);
+  text-decoration: none;
 }
 
 /* Media query for smaller screens */

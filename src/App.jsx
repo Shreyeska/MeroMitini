@@ -12,6 +12,7 @@ import ContactPage from "./pages/Webpages/ContactPage";
 import AboutPage from "./pages/Webpages/AboutPage";
 import EventsPage from "./pages/Webpages/EventsPage";
 import UpcomingEventsPage from "./pages/Webpages/UpcomingEventsPage";
+import EventDetailsPage from "./pages/Webpages/EventDetailsPage";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/upcoming-events" element={<UpcomingEventsPage />} />
+          <Route path="/event-details" element={<EventDetailsPage />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
