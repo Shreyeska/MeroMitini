@@ -17,6 +17,7 @@ form {
   background-color: transparent;
   width: 300px;
   padding: 40px;
+  padding-top: 10px;
   border-radius: 14px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 40rem;
@@ -85,4 +86,20 @@ button[type="submit"]:hover {
 }
 footer {
   margin-top: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .auth-page {
+    margin-top: 4rem;
+    background: none;
+  }
+
+  .auth-page form {
+    left: 50%;
+  }
+  .auth-page p,
+  .login,
+  .sign-up {
+    color: var(--primary-fontcolor);
+  }
 }

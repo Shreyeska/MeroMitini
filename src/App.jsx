@@ -8,6 +8,7 @@ import NotFound from "./pages/NotfoundPage";
 import SignUp from "./pages/Auth/SignupPage";
 import Login from "./pages/Auth/LoginPage";
 import Home from "./pages/Webpages/HomePage";
+import ContactPage from "./pages/Webpages/ContactPage";
 import AboutPage from "./pages/Webpages/AboutPage";
 import EventsPage from "./pages/Webpages/EventsPage";
 import UpcomingEventsPage from "./pages/Webpages/UpcomingEventsPage";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/events" element={<EventsPage />} />

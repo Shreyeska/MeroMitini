@@ -1,6 +1,7 @@
 .event-page {
   padding-bottom: 150px;
 }
+
 .event-container {
   display: flex;
   flex-wrap: wrap;
@@ -72,4 +73,13 @@ p.desc {
   color: var(--primary-fontcolor);
   text-align: center;
   margin: 20px 0;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 900px) {
+  .event-card {
+    width: calc(
+      100% - 40px
+    ); /* Adjusted width for two cards per row on smaller screens */
+  }
 }
