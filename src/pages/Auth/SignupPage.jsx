@@ -1,15 +1,18 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import SignUp from "../../components/Auth/Signup";
 
-const SignUp = () => {
+const SignUpPage = () => {
   return (
     <>
-      <Navbar />
-      <h1>This is the Sign up Page</h1>
-      <Footer />
+      <div id="root" className="auth-page">
+        <Navbar />
+        <SignUp />
+        {/* <Footer /> */}
+      </div>
     </>
   );
 };
 
-export default SignUp;
+export default SignUpPage;

@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   /* min-width: 80vw;
   overflow: hidden; */
-  --primary-color: #e997a3;
+  --primary-color: #be5e6d;
   --secondary-color: rgb(80, 42, 67);
   --primary-fontcolor: #001c53;
   --secondary-fontcolor: #f5f5f5;
@@ -130,7 +130,7 @@ nav a:hover {
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 100px; /* Footer height */
+  height: 100px;
 }
 
 .footer p {

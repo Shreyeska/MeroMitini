@@ -6,6 +6,7 @@ import "./App.css";
 
 import NotFound from "./pages/NotfoundPage";
 import SignUp from "./pages/Auth/SignupPage";
+import Login from "./pages/Auth/LoginPage";
 import Home from "./pages/Webpages/HomePage";
 import AboutPage from "./pages/Webpages/AboutPage";
 import EventsPage from "./pages/Webpages/EventsPage";
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
