@@ -12,6 +12,7 @@ import AboutPage from "./pages/Webpages/AboutPage";
 import EventsPage from "./pages/Webpages/EventsPage";
 import UpcomingEventsPage from "./pages/Webpages/UpcomingEventsPage";
 import EventDetailsPage from "./pages/Webpages/EventDetailsPage";
+import HostEventForm from "./pages/Webpages/HostEventPage";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path="/events" element={<EventsPage />} />
           <Route path="/upcoming-events" element={<UpcomingEventsPage />} />
           <Route path="/event-details" element={<EventDetailsPage />} />
-
+          <Route path="/host-an-event-form" element={<HostEventForm />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
