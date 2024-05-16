@@ -46,7 +46,6 @@ textarea {
   resize: vertical;
   outline: none;
   box-sizing: border-box;
-  background-color: white;
 }
 
 .event-registration-form button {
