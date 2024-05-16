@@ -1,0 +1,56 @@
+.event-details-container {
+  display: flex;
+  border: 1px;
+  padding: 20px;
+  padding-bottom: 12rem;
+  margin: 50px;
+}
+
+.event-details-image {
+  width: 30%;
+  height: 100%;
+  margin: 40px;
+}
+
+.event-details-content {
+  width: 70%;
+  padding: 10px;
+}
+
+.event-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.event-meta-item {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.register-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-fontcolor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.event-summary {
+  margin-top: 20px;
+}
+
+.event-summary h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.event-summary p {
+  line-height: 1.6;
+}

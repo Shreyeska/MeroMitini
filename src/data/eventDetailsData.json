@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "eventName": "Tech LeadHers",
+    "date": "2024-02-15",
+    "duration": "5 months",
+    "location": "Ward 17, Kathmandu",
+    "participants": "12",
+    "summary": [
+      "The TechLeadHers Program, situated in Kathmandu Ward 17, embarks on a transformative journey for aspiring female tech leaders. Over the course of six months, the program provides a comprehensive training experience comprising workshops, mentorship sessions, and networking opportunities tailored for women in the tech industry. This initiative offers a unique platform for participants to augment their technical prowess and industry insights, laying a robust foundation for their professional trajectory.",
+      " With a primary objective of nurturing female talent, the project targets up to 15 exceptional and committed students specializing in computer science or related fields. Beyond skill enhancement, participants are encouraged to actively engage in community initiatives, extending their knowledge and expertise to young minds in government, community, or small-scale educational institutions. Through strategic outreach and mentorship, the program aspires to instill a sense of empowerment and vision among budding individuals, fostering a culture of innovation and inclusion within the technology landscape.",
+      "The TechLeaders Fellowship consists of 12 dedicated women pursuing their Bachelor's degrees in Information Technology. These aspiring leaders are divided into four teams, each focusing on a specific area of impact: Women Empowerment, Waste Management, Old Age and Municipality, and Cultural and Tourism",
+      "Over the course of a five-month-long fellowship program, these teams will immerse themselves in their respective themes, gaining in-depth knowledge and skills to address real-world challenges. Through workshops, mentorship, and collaborative projects, they will not only develop expertise in their chosen fields but also cultivate leadership abilities and teamwork.",
+      "One of the core objectives of the fellowship is to empower these women to create meaningful projects that contribute positively to society. In addition to their project work, they will engage in community outreach programs (HOC) to give back to the community. This holistic approach ensures that the TechLeaders Fellowship not only equips participants with technical skills but also instills a sense of social responsibility and civic engagement."
+    ],
+    "image": "/assets/techLeadHers.jpg"
+  }
+]

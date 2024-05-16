@@ -1,0 +1,65 @@
+.hosteventpage1 {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  margin-top: 0;
+}
+
+.col1,
+.col2 {
+  flex: 1;
+}
+.event-registration-form {
+  margin: 0;
+  width: 100vw; /* Cover whole screen */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-registration-form form {
+  background-color: #e6d3d3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  width: 500px;
+  padding: 2rem;
+  margin-bottom: 280px;
+}
+
+.event-registration-form label {
+  font-weight: bold;
+}
+
+.event-registration-form input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.event-registration-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-fontcolor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.event-registration-form button:hover {
+  background-color: var(--secondary-color);
+}

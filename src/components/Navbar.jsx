@@ -3,13 +3,12 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
         <NavLink to="/" exact activeClassName="active">
-          <img src="logo.png" alt="Logo" />
+          <img src="" alt="Logo" />
         </NavLink>
       </div>
 

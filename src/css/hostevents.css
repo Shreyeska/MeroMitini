@@ -1,0 +1,59 @@
+.host-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: url("../asset/hosteventbanner.png") no-repeat center center /
+    cover;
+  padding: 2rem 2rem;
+  /* margin-top: 4rem; */
+  padding-bottom: 0;
+  height: 500px;
+}
+
+.host-link {
+  color: white;
+  text-decoration: none;
+}
+
+.host-event h1 {
+  color: var(--primary-fontcolor);
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left; /* Align h1 to the left */
+  margin: 40px 0; /* Adjust top and bottom margin */
+}
+
+.host-event .host-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 250px;
+  transition: background-color 0.3s; /* Smooth transition for background-color */
+}
+
+.host-event .host-button:hover {
+  background-color: var(
+    --secondary-color
+  ); /* Change background-color on hover */
+}
+
+@media only screen and (max-width: 786px) {
+  .host-event {
+    height: auto;
+    background-size: cover;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .host-event .host-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

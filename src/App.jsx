@@ -1,15 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 
 import "./App.css";
 
 import NotFound from "./pages/NotfoundPage";
 import SignUp from "./pages/Auth/SignupPage";
+import Login from "./pages/Auth/LoginPage";
 import Home from "./pages/Webpages/HomePage";
+import ContactPage from "./pages/Webpages/ContactPage";
 import AboutPage from "./pages/Webpages/AboutPage";
 import EventsPage from "./pages/Webpages/EventsPage";
 import UpcomingEventsPage from "./pages/Webpages/UpcomingEventsPage";
+import EventDetailsPage from "./pages/Webpages/EventDetailsPage";
+import HostEventForm from "./pages/Webpages/HostEventPage";
 
 function App() {
   return (
@@ -17,11 +20,15 @@ function App() {
       <Router>
         <Routes>
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/upcoming-events" element={<UpcomingEventsPage />} />
+          <Route path="/event-details" element={<EventDetailsPage />} />
+          <Route path="/host-an-event-form" element={<HostEventForm />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

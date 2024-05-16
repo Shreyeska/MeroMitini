@@ -2,6 +2,7 @@ import React from "react";
 import HomeEvents from "../../components/Home/HomeEvents";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import HostEventBanner from "../../components/Home/HostEventBanner";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -42,6 +43,8 @@ const Home = () => {
         <Link to="/events" className="read-more-button">
           Read More
         </Link>
+
+        <HostEventBanner />
 
         <Footer />
       </div>

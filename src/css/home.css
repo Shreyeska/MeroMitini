@@ -70,6 +70,7 @@
   display: block;
   width: fit-content;
   margin: 0 auto;
+  margin-bottom: 3rem;
   padding: 10px 20px;
   background-color: var(--primary-color);
   color: var(--secondary-fontcolor);
@@ -86,4 +87,24 @@
 .read-more-button:hover {
   background-color: var(--secondary-color);
   color: var(--secondary-fontcolor);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .about {
+    background: none;
+  }
+  .search-section {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  .search-button {
+    margin-left: 0;
+  }
 }
