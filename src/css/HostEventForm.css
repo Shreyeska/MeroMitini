@@ -20,7 +20,7 @@
 }
 
 .event-registration-form form {
-  background-color: pink;
+  background-color: #e6d3d3;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
