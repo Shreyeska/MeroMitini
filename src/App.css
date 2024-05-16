@@ -57,7 +57,7 @@ nav {
 }
 
 nav a {
-  color: var(--secondary-fontcolor);
+  color: var(--primary-fontcolor);
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
@@ -70,7 +70,7 @@ nav a {
 .dropbtn {
   background-color: transparent;
   outline: none;
-  color: var(--secondary-fontcolor);
+  color: var(--primary-fontcolor);
   border: none;
 }
 
