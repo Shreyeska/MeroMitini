@@ -21,6 +21,9 @@ const EventDetails = ({ event }) => {
           <span className="event-meta-item">
             <strong>Location:</strong> {event.location}
           </span>
+          <span className="event-meta-item">
+            <strong>Particpants:</strong> {event.participants}
+          </span>
           <button className="register-button">Register</button>
         </div>
         <div className="event-summary">
