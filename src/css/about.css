@@ -1,8 +1,8 @@
 .about-page {
   display: flex;
-  padding-top: 0;
   padding: 2rem;
-  text-align: justify;
+  align-items: center;
+  margin-top: 0;
 }
 
 .col1,
@@ -11,8 +11,25 @@
 }
 
 .col2 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  padding: 5rem;
+}
+.gallery {
+  display: flex;
+  padding: 3rem;
+  justify-content: space-between;
+  margin-bottom: 250px;
+}
+
+.gallery img {
+  width: 30%;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.gallery img:last-child {
+  margin-right: 0; /* Remove margin from the last image */
 }
 
 @media only screen and (max-width: 900px) {

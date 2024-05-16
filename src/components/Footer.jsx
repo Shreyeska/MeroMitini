@@ -9,7 +9,7 @@ const Footer = () => {
           className="wave"
         >
           <path
-            fill="var(--secondary-color)"
+            fill="var(--nav)"
             fillOpacity="1"
             d="M80,160c64,-20,128,-40,192,-40s128,40,192,20s128,-80,192,-60s128,20,192,20s128,-60,192,-40s128,60,192,20s128,-60,192,-20s128,80,192,60s128,-20,192,-40v100H80V160z"
             transform="rotate(-1.7, 50, 50)"
