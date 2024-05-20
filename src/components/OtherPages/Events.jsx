@@ -19,11 +19,10 @@ const Events = () => {
                 <h2 className="event-title">{event.title}</h2>
                 <p className="event-date">{event.date}</p>
                 <p className="event-category">{event.category}</p>
-                <button className="read-more-btn">
-                  <Link to="/event-details" className="event-detail-link">
-                    Read More
-                  </Link>
-                </button>
+
+                <Link to="/past-event-details" className="event-detail-link">
+                  <button className="read-more-btn"> Read More</button>
+                </Link>
               </div>
             </div>
           ))}

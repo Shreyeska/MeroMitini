@@ -69,6 +69,18 @@ const SignUp = () => {
         onChange={handleChange}
         required
       />
+      <label htmlFor="confirmPassword">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        value={state.confirmPassword}
+        onChange={handleChange}
+        required
+      />
+      {state.passwordError && (
+        <span style={{ color: "red" }}>{state.passwordError}</span>
+      )}
       <button type="submit">Sign Up</button>
       <p>
         Already have an account?{" "}

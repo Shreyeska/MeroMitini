@@ -1,0 +1,10 @@
+{
+  "user": {
+    "fullName": "Hari Maya Maharjan",
+    "email": "harimaya@example.com",
+    "phoneNumber": "+977 1234567890",
+    "wardNo": "34",
+    "gender": "Female",
+    "dateOfBirth": "1990-01-01"
+  }
+}

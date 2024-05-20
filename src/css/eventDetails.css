@@ -1,9 +1,10 @@
+.event-details-full {
+  border: 1px;
+  margin: 50px;
+  padding-bottom: 16rem;
+}
 .event-details-container {
   display: flex;
-  border: 1px;
-  padding: 20px;
-  padding-bottom: 12rem;
-  margin: 50px;
 }
 
 .event-details-image {
@@ -53,4 +54,21 @@
 
 .event-summary p {
   line-height: 1.6;
+}
+
+.event-gallery {
+  margin-top: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
 }
