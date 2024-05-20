@@ -37,6 +37,9 @@ const Navbar = () => {
         <NavLink to="/contact" activeClassName="active">
           Contact
         </NavLink>
+        <NavLink to="/user" exact activeClassName="active">
+          User
+        </NavLink>
         <NavLink to="/sign-up" activeClassName="active">
           Signup
         </NavLink>

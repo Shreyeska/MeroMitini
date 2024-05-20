@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/eventDetails.css";
 
-const EventDetails = ({ event }) => {
+const PastEvents = ({ event }) => {
   return (
     <div className="event-details-full">
       <div className="event-details-container">
@@ -23,18 +23,35 @@ const EventDetails = ({ event }) => {
               <strong>Location:</strong> {event.location}
             </span>
             <span className="event-meta-item">
-              <strong>Requirements:</strong> {event.requirements}
+              <strong>Particpants:</strong> {event.participants}
             </span>
             <span className="event-meta-item">
               <strong>Objectives:</strong> {event.objective}
             </span>
-            <button className="register-button">Register</button>
           </div>
         </div>
       </div>
-      \{" "}
+      <div className="event-summary">
+        <h3>About the event:</h3>
+        {event.summary.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
+      <div className="event-gallery">
+        <h3>Event Gallery:</h3>
+        <div className="gallery-images">
+          {event.gallery.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Gallery image ${index + 1}`}
+              className="gallery-image"
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default EventDetails;
+export default PastEvents;
