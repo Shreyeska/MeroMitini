@@ -13,10 +13,6 @@ const Navbar = () => {
       </div>
 
       <div className="navlinks">
-        <NavLink to="/host-an-event-form" exact activeClassName="active">
-          Host an Event
-        </NavLink>
-
         <NavLink to="/home" exact activeClassName="active">
           Home
         </NavLink>
@@ -40,6 +36,9 @@ const Navbar = () => {
         </NavLink>
         <NavLink to="/contact" activeClassName="active">
           Contact
+        </NavLink>
+        <NavLink to="/user" exact activeClassName="active">
+          User
         </NavLink>
         <NavLink to="/sign-up" activeClassName="active">
           Signup

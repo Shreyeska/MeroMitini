@@ -24,7 +24,7 @@
   margin: 40px 0; /* Adjust top and bottom margin */
 }
 
-.host-event .host-button {
+.host-button {
   padding: 10px 20px;
   font-size: 18px;
   text-align: center;
@@ -34,11 +34,11 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
-  margin-left: 250px;
+  margin-left: 20px;
   transition: background-color 0.3s; /* Smooth transition for background-color */
 }
 
-.host-event .host-button:hover {
+.host-button:hover {
   background-color: var(
     --secondary-color
   ); /* Change background-color on hover */
@@ -52,7 +52,7 @@
     text-align: center;
   }
 
-  .host-event .host-button {
+  .host-button {
     margin-left: auto;
     margin-right: auto;
   }

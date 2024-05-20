@@ -7,7 +7,7 @@ const HostEventBanner = () => {
       <div className="host-event">
         <h1>Want to host an Event??</h1>
         <button className="host-button">
-          <Link to="/host-an-event-form" className="host-link">
+          <Link to="/sign-up" className="host-link">
             Host Event
           </Link>
         </button>
