@@ -3,22 +3,41 @@ import "./../../css/about.css";
 import image1 from "../../asset/image1.jpg";
 import image2 from "../../asset/image2.jpg";
 import image3 from "../../asset/image3.jpg";
-import mentorImage from "../../asset/image3.jpg";
+import niva from "../../asset/niva.png";
+import shre from "../../asset/shreyeska.jpg";
+import dristi from "../../asset/dristi.jpg";
+import mentorImage from "../../asset/sagun.jpg";
+import linkedin from "../../asset/linkedin.png";
 
-import image from "../../asset/techLeadHers.jpg";
+import image from "../../asset/about1.png";
 
 const About = () => {
   const teamMembers = [
-    { name: "Niva Maharjan", image: image1 },
-    { name: "Shreyeska Silwal", image: image1 },
-    { name: "Dirsti Maharjan", image: image1 },
+    {
+      name: "Niva Maharjan",
+      image: niva,
+      linkedin: "https://www.linkedin.com/in/niva-maharjan/",
+    },
+    {
+      name: "Shreyeska Silwal",
+      image: shre,
+      linkedin: "https://www.linkedin.com/in/shreyeska/",
+    },
+    {
+      name: "Dirsti Maharjan",
+      image: dristi,
+      linkedin: "https://www.linkedin.com/in/dristi-maharjan-a50020252/",
+    },
   ];
 
   const mentor = {
     name: "Mr. Sagun Dhungana",
     image: mentorImage,
+    linkedin: "https://www.linkedin.com/in/sagundhungana/",
   };
-  return <> <div className="about-page">
+  return (
+    <>
+      <div className="about-page">
         <div className="col1">
           <h1>About Us</h1>
           <span>
@@ -59,7 +78,13 @@ const About = () => {
           <div key={index} className="team-member">
             <img src={member.image} alt={member.name} className="team-image" />
             <p>
-              {" "}
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkedin} alt="LinkedIn" className="linkedin-icon" />
+              </a>{" "}
               <strong>{member.name}</strong>
             </p>
           </div>
@@ -70,8 +95,14 @@ const About = () => {
       <div className="mentor-container">
         <img src={mentor.image} alt={mentor.name} className="mentor-image" />
         <p>
-          {" "}
+          <a href={mentor.linkedin} target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="LinkedIn" className="linkedin-icon" />
+          </a>{" "}
           <strong>{mentor.name}</strong>
+        </p>
+
+        <p>
+          <strong> for his invaluable guidance and support</strong>
         </p>
       </div>
 
@@ -81,7 +112,9 @@ const About = () => {
         <img src={image1} alt="About" />
         <img src={image2} alt="About" />
         <img src={image3} alt="About" />
-      </div> </>;
+      </div>
+    </>
+  );
 };
 
 export default About;
