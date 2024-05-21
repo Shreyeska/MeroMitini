@@ -34,21 +34,7 @@ export default function Navbar() {
       </div>
 
       <div className="navlinks">
-        {username ? (
-          <>
-            <Link to="/create">Create new post</Link>
-            <a onClick={logout}>Logout</a>
-          </>
-        ) : (
-          <>
-            <NavLink to="/login" activeClassName="active">
-              Login
-            </NavLink>
-            <NavLink to="/sign-up" activeClassName="active">
-              Signup
-            </NavLink>
-          </>
-        )}
+       
 
         <NavLink to="/home" exact activeClassName="active">
           Home
@@ -74,9 +60,24 @@ export default function Navbar() {
         <NavLink to="/contact" activeClassName="active">
           Contact
         </NavLink>
-        <NavLink to="/user" exact activeClassName="active">
+        
+        {username ? (
+          <>
+            <NavLink to="/user" exact activeClassName="active">
           User
         </NavLink>
+            <a onClick={logout}>Logout</a>
+          </>
+        ) : (
+          <>
+            <NavLink to="/login" activeClassName="active">
+              Login
+            </NavLink>
+            <NavLink to="/sign-up" activeClassName="active">
+              Signup
+            </NavLink>
+          </>
+        )}
 
         <button className="search-button">
           <FontAwesomeIcon icon={faSearch} />
