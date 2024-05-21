@@ -16,10 +16,12 @@ import PastEventDetailsPage from "./pages/Webpages/PastEventDetailsPage";
 
 import HostEventForm from "./pages/Webpages/HostEventPage";
 import UserProfile from "./pages/Webpages/UserProfile";
+import { UserContextProvider } from "./UserContext";
 
 function App() {
   return (
     <>
+    <UserContextProvider>
       <Router>
         <Routes>
           <Route path="/sign-up" element={<SignUp />} />
@@ -42,6 +44,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
+      </UserContextProvider>
     </>
   );
 }

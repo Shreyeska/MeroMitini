@@ -43,7 +43,7 @@ export default function SignUp() {
       <input
         type="text"
         id="number"
-        placeholder="phonenumber"
+        placeholder="phone-number"
         name="number"
         value={number}
         onChange={ev => setNumber(ev.target.value)}

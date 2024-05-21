@@ -8,6 +8,7 @@ const jwt = require ('jsonwebtoken');
 const { error } = require('console');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
+import http from 'http';
 
 const salt = bcrypt.genSalt(10);
 const secret = "asdsdfhj342wedfnmsb2194uejkfdsndfbsdf";

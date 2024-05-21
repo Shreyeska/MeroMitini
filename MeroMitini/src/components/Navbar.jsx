@@ -17,7 +17,7 @@ export default function Navbar() {
   }, []);
 
   function logout() {
-    fetch('http://localhost:7000/logout', {
+    fetch('http://localhost:7000/', {
       credentials: 'include',
       method: 'POST',
     }).then(() => {
