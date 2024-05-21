@@ -1,9 +1,30 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-const Navbar = () => {
+import { faAngleDown, faSearch } from "@fortawesome/free-solid-svg-icons";
+
+export default function Navbar() {
+  const [username, setUsername] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:7000/UserProfilePage', {
+      credentials: 'include',
+    }).then(response => {
+      response.json().then(userInfo => {
+        setUsername(userInfo.username);
+      });
+    });
+  }, []);
+
+  function logout() {
+    fetch('http://localhost:7000/logout', {
+      credentials: 'include',
+      method: 'POST',
+    }).then(() => {
+      setUsername(null);
+    });
+  }
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -13,6 +34,22 @@ const Navbar = () => {
       </div>
 
       <div className="navlinks">
+        {username ? (
+          <>
+            <Link to="/create">Create new post</Link>
+            <a onClick={logout}>Logout</a>
+          </>
+        ) : (
+          <>
+            <NavLink to="/login" activeClassName="active">
+              Login
+            </NavLink>
+            <NavLink to="/sign-up" activeClassName="active">
+              Signup
+            </NavLink>
+          </>
+        )}
+
         <NavLink to="/home" exact activeClassName="active">
           Home
         </NavLink>
@@ -40,15 +77,11 @@ const Navbar = () => {
         <NavLink to="/user" exact activeClassName="active">
           User
         </NavLink>
-        <NavLink to="/sign-up" activeClassName="active">
-          Signup
-        </NavLink>
+
         <button className="search-button">
           <FontAwesomeIcon icon={faSearch} />
         </button>
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
