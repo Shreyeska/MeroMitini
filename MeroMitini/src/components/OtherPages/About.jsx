@@ -8,8 +8,7 @@ import shre from "../../asset/shreyeska.jpg";
 import dristi from "../../asset/dristi.jpg";
 import mentorImage from "../../asset/sagun.jpg";
 import linkedin from "../../asset/linkedin.png";
-
-import image from "../../asset/about1.png";
+import image from "../../asset/IHlogo.png";
 
 const About = () => {
   const teamMembers = [

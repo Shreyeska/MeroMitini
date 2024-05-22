@@ -6,33 +6,42 @@
 
 .contact-info-column,
 .contact-form-column {
+
   width: 45%;
   max-height: 550px;
   padding: 20px;
+  font-size: larger; 
+  font-family: "Arial", sans-serif;
+  color: var(--primary-fontcolor);
   margin: 50px;
-  /* border: 1px solid #ccc; */
+  
   margin-bottom: 300px;
 }
 
 .contact-info-column img {
   max-width: 100%;
   height: auto;
+  padding-left: 70px;
   margin-bottom: 10px;
+  
 }
 
 .contact-info-column h2,
 .contact-form-column h2 {
   margin-top: 0;
+  
 }
 
 .contact-info-column p {
   margin: 5px 0;
   text-align: center;
+  padding: auto;
 }
 
 .contact-form-column form {
   display: flex;
   flex-direction: column;
+  
 }
 
 .contact-form-column label {

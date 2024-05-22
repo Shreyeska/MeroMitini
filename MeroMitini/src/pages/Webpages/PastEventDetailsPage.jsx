@@ -9,7 +9,6 @@ const PastEventDetailsPage = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    // Simulating fetching events data from JSON file
     setEvents(eventDetailsData);
   }, []);
 

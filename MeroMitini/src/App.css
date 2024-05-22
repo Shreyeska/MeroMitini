@@ -46,15 +46,17 @@ body {
   object-fit: fill;
   position: relative;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 nav {
   display: flex;
-  /* justify-content: flex-end; */
+
   align-items: center;
-  /* background-color: #333; */
+
   padding: 20px;
+  font-size: 20px;
+	font-family: "Alegreya Sans SC", sans-serif;
 }
 
 .navlinks {
@@ -77,6 +79,8 @@ nav a {
   outline: none;
   color: var(--primary-fontcolor);
   border: none;
+  font-size: 18px;
+	font-family: "Alegreya Sans SC", sans-serif;
 }
 
 .dropbtn:focus,

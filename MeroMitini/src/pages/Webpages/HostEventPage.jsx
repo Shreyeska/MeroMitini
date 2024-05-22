@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import "../../css/HostEventForm.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import image from "../../asset/about.png";
 
-const HostEventForm = () => {
+export default function HostEventForm() {
   const [formData, setFormData] = useState({
     hostEventName: "",
     hostEventDuration: "",
@@ -20,15 +19,42 @@ const HostEventForm = () => {
     hostSummary: "",
   });
 
+  const [file, setFile] = useState(null);
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { name, value, type, files } = e.target;
+    if (type === "file") {
+      setFile(files[0]);
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can handle form submission here, e.g., send data to backend
-    console.log(formData);
+    const data = new FormData();
+    for (const key in formData) {
+      data.append(key, formData[key]);
+    }
+    if (file) {
+      data.append("file", file);
+    }
+
+    try {
+      const response = await fetch("http://localhost:7000/upcoming-events", {
+        method: "POST",
+        body: data,
+      });
+
+      if (response.ok) {
+        console.log("Event created successfully");
+      } else {
+        const errorText = await response.text();
+        console.error("Failed to create event:", errorText);
+      }
+    } catch (error) {
+      console.error("Failed to create event:", error);
+    }
   };
 
   return (
@@ -44,6 +70,7 @@ const HostEventForm = () => {
           <label htmlFor="hostEventName">Event Name:</label>
           <input
             type="text"
+            placeholder="Event Name"
             id="hostEventName"
             name="hostEventName"
             value={formData.hostEventName}
@@ -54,6 +81,7 @@ const HostEventForm = () => {
           <label htmlFor="hostEventDuration">Event Duration:</label>
           <input
             type="text"
+            placeholder="Event Duration"
             id="hostEventDuration"
             name="hostEventDuration"
             value={formData.hostEventDuration}
@@ -70,12 +98,11 @@ const HostEventForm = () => {
             required
           />
 
-          <label htmlFor="hostEventTime">Event Time:</label>
+          <label htmlFor="hostEventTime">Image:</label>
           <input
-            type="time"
+            type="file"
             id="hostEventTime"
             name="hostEventTime"
-            value={formData.hostEventTime}
             onChange={handleChange}
             required
           />
@@ -84,6 +111,7 @@ const HostEventForm = () => {
           <input
             type="text"
             id="hostEventLocation"
+            placeholder="Event Location"
             name="hostEventLocation"
             value={formData.hostEventLocation}
             onChange={handleChange}
@@ -94,6 +122,7 @@ const HostEventForm = () => {
           <textarea
             id="hostObjective"
             name="hostObjective"
+            placeholder="Objective"
             value={formData.hostObjective}
             onChange={handleChange}
             required
@@ -103,6 +132,7 @@ const HostEventForm = () => {
           <input
             type="text"
             id="hostTargetAudience"
+            placeholder="Target Audience"
             name="hostTargetAudience"
             value={formData.hostTargetAudience}
             onChange={handleChange}
@@ -113,6 +143,7 @@ const HostEventForm = () => {
           <input
             type="text"
             id="hostContactPersonName"
+            placeholder="Contact Person Name"
             name="hostContactPersonName"
             value={formData.hostContactPersonName}
             onChange={handleChange}
@@ -123,6 +154,7 @@ const HostEventForm = () => {
           <input
             type="tel"
             id="hostContactNumber"
+            placeholder="Contact Number"
             name="hostContactNumber"
             value={formData.hostContactNumber}
             onChange={handleChange}
@@ -133,6 +165,7 @@ const HostEventForm = () => {
           <input
             type="email"
             id="hostEmail"
+            placeholder="Email"
             name="hostEmail"
             value={formData.hostEmail}
             onChange={handleChange}
@@ -143,6 +176,7 @@ const HostEventForm = () => {
           <input
             type="text"
             id="hostOrganizersName"
+            placeholder="Organizers Name"
             name="hostOrganizersName"
             value={formData.hostOrganizersName}
             onChange={handleChange}
@@ -152,6 +186,7 @@ const HostEventForm = () => {
           <label htmlFor="hostSummary">Summary:</label>
           <textarea
             id="hostSummary"
+            placeholder="Summary"
             name="hostSummary"
             value={formData.hostSummary}
             onChange={handleChange}
@@ -165,6 +200,4 @@ const HostEventForm = () => {
       <Footer />
     </>
   );
-};
-
-export default HostEventForm;
+}

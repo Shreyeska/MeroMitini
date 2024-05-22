@@ -1,42 +1,46 @@
-import React, { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useState, useEffect, useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { UserContext } from "../UserContext";
+
+import logo from "../asset/infologo.png"; // Adjust the path if needed
 
 export default function Navbar() {
-  const [username, setUsername] = useState(null);
+  const { setUserInfo, userInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch('http://localhost:7000/UserProfilePage', {
-      credentials: 'include',
-    }).then(response => {
-      response.json().then(userInfo => {
-        setUsername(userInfo.username);
+    fetch("http://localhost:7000/UserProfilePage", {
+      credentials: "include",
+    }).then((response) => {
+      response.json().then((userInfo) => {
+        setUserInfo(userInfo);
       });
     });
-  }, []);
+  }, [setUserInfo]);
 
-  function logout() {
-    fetch('http://localhost:7000/', {
-      credentials: 'include',
-      method: 'POST',
+  function logout(event) {
+    event.preventDefault();
+    fetch("http://localhost:7000/logout", {
+      credentials: "include",
+      method: "POST",
     }).then(() => {
-      setUsername(null);
+      setUserInfo(null);
     });
   }
+
+  const username = userInfo?.username;
 
   return (
     <nav className="navbar">
       <div className="logo">
-        <NavLink to="/" exact activeClassName="active">
-          <img src="" alt="Logo" />
+        <NavLink to="/" activeClassName="active">
+          <img src={logo} alt="Logo" />
         </NavLink>
       </div>
 
       <div className="navlinks">
-       
-
-        <NavLink to="/home" exact activeClassName="active">
+        <NavLink to="/home" activeClassName="active">
           Home
         </NavLink>
 
@@ -60,13 +64,15 @@ export default function Navbar() {
         <NavLink to="/contact" activeClassName="active">
           Contact
         </NavLink>
-        
+
         {username ? (
           <>
-            <NavLink to="/user" exact activeClassName="active">
-          User
-        </NavLink>
-            <a onClick={logout}>Logout</a>
+            <NavLink to="/user" activeClassName="active">
+              {username}
+            </NavLink>
+            <a href="#logout" onClick={logout}>
+              Logout
+            </a>
           </>
         ) : (
           <>
@@ -74,7 +80,7 @@ export default function Navbar() {
               Login
             </NavLink>
             <NavLink to="/sign-up" activeClassName="active">
-              Signup
+              Sign-up
             </NavLink>
           </>
         )}

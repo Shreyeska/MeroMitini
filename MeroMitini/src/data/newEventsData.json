@@ -2,57 +2,36 @@
   {
     "id": 1,
     "title": "Tech LeadHers",
-    "date": "Feb 2024",
+    "date": "Feb 2025",
     "category": "Women Fellowship",
     "image": "/assets/techLeadHers.jpg"
   },
   {
     "id": 2,
-    "title": "Another Event",
+    "title": "Acupuncture Health Camp",
     "date": "May 2024",
     "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "image": "/src/asset/ue1.jpg"
   },
   {
     "id": 3,
-    "title": "Another Event",
+    "title": "Awareness & Leisure",
     "date": "May 2024",
     "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "image": "/src/asset/ue2.jpg"
   },
   {
     "id": 4,
-    "title": "Another Event",
+    "title": "Insurance Information",
     "date": "May 2024",
     "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "image": "/src/asset/ue3.jpg"
   },
   {
     "id": 5,
-    "title": "Another Event",
+    "title": "Inter-Ward Futsal Competition",
     "date": "May 2024",
     "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
-  },
-  {
-    "id": 8,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "image": "/src/asset/ue4.jpg"
   }
 ]

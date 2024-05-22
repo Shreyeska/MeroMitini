@@ -32,15 +32,15 @@ const Home = () => {
           </div>
           <div className="col"></div>
         </div>
-        <h1>New Upcoming Events</h1>
-        <HomeUpcomingEvents />
-        <Link to="/upcoming-events" className="read-more-button">
-          Read More
-        </Link>
 
         <h1>Past Events</h1>
         <HomeEvents />
         <Link to="/events" className="read-more-button">
+          Read More
+        </Link>
+        <h1>New Upcoming Events</h1>
+        <HomeUpcomingEvents />
+        <Link to="/upcoming-events" className="read-more-button">
           Read More
         </Link>
 

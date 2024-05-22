@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/contact.css";
-import image from "../../asset/cat.jpg";
+import image from "../../asset/contactus.png";
 
 class Contact extends React.Component {
   constructor(props) {

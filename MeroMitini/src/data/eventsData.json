@@ -2,57 +2,36 @@
   {
     "id": 1,
     "title": "Tech LeadHers",
-    "date": "Feb 2024",
+    "date": "February 2024 - May 2024",
     "category": "Women Fellowship",
     "image": "/assets/techLeadHers.jpg"
   },
   {
     "id": 2,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "title": "Digital CitizenShip",
+    "date": "May 17, 2024",
+    "category": "Hour of Community Work",
+    "image": "/src/asset/image1.jpg"
   },
   {
     "id": 3,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "title": "Waste Management",
+    "date": "May 17, 2024",
+    "category": "Hour of Community Work",
+    "image": "/src/asset/wmhoc.jpeg"
   },
   {
     "id": 4,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "title": "Culture & Tourism",
+    "date": "May 17, 2024",
+    "category": "Hour of Community Work",
+    "image": "/src/asset/cnthoc.jpeg"
   },
   {
     "id": 5,
-    "title": "Another Event",
+    "title": "Oldage & Municipal",
     "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
-  },
-  {
-    "id": 8,
-    "title": "Another Event",
-    "date": "May 2024",
-    "category": "Some Category",
-    "image": "/assets/techLeadHers.jpg"
+    "category": "Hour of Community Work",
+    "image": "/src/asset/onmhoc.jpeg"
   }
 ]

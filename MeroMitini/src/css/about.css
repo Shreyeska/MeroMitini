@@ -6,15 +6,21 @@
   padding-top: 0;
 }
 
-.col1,
-.col2 {
-  flex: 1;
+.col1{
+  margin-left: 20px;
+  padding: 20px 40px 20px 90px ; 
+  font-size: larger; 
+  font-family: "Arial", sans-serif;
+  color: var(--primary-fontcolor);
 }
 
+
 .col2 img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
-  padding: 5rem;
+  padding-left: 80px;
+  size: 80px;
+  padding-top:70px ;
 }
 
 .team-container,
@@ -24,6 +30,8 @@
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  font-size: larger; 
+  font-family: "Arial", sans-serif;
 }
 
 .team-member {
@@ -43,6 +51,12 @@
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+.linkedin-icon {
+  width: 14px;
+  height: 14px;
+  margin-top: 10px;
 }
 
 .gallery {

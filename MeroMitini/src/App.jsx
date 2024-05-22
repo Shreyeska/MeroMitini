@@ -13,7 +13,6 @@ import EventsPage from "./pages/Webpages/EventsPage";
 import UpcomingEventsPage from "./pages/Webpages/UpcomingEventsPage";
 import EventDetailsPage from "./pages/Webpages/EventDetailsPage";
 import PastEventDetailsPage from "./pages/Webpages/PastEventDetailsPage";
-
 import HostEventForm from "./pages/Webpages/HostEventPage";
 import UserProfile from "./pages/Webpages/UserProfile";
 import { UserContextProvider } from "./UserContext";
@@ -34,12 +33,8 @@ function App() {
           <Route path="/upcoming-events" element={<UpcomingEventsPage />} />
           <Route path="/event-details" element={<EventDetailsPage />} />
           <Route path="/user" element={<UserProfile />} />
-
-          <Route
-            path="/past-event-details"
-            element={<PastEventDetailsPage />}
+          <Route path="/past-event-details"element={<PastEventDetailsPage />}
           />
-
           <Route path="/host-an-event-form" element={<HostEventForm />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
